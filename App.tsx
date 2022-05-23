@@ -1,11 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
+const Name: string = "While learning Typesricpt I was asked for a number and it was :";
+const Age: Number = 42;
+let message: string | Number = Name + Age;
+
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Text>{message}</Text>
     </View>
   );
 }
